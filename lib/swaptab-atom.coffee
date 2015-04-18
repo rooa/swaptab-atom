@@ -8,11 +8,12 @@ module.exports = SwaptabAtom =
 
   activate: (state) ->
     @swaptabAtomView = new SwaptabAtomView(state.swaptabAtomViewState)
+    console.log "here1"
     @modalPanel = atom.workspace.addModalPanel(item: @swaptabAtomView.getElement(), visible: false)
-
+    console.log "here2"
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
-
+    console.log "here3"
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:toggle': => @toggle()
     @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:move-tab-right': => @moveRight()
@@ -25,7 +26,7 @@ module.exports = SwaptabAtom =
   moveLeft: ->
     pane = atom.workspace.getActivePane()
     pane.moveItemLeft()
-        
+
   deactivate: ->
     @modalPanel.destroy()
     @subscriptions.dispose()
