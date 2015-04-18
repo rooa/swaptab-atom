@@ -1,5 +1,9 @@
-# swaptab-atom package
+# swaptab-atom
 
-A short description of your package.
+Move your tab with one command.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![]](http://i.gyazo.com/2ad057247f690bba9fdd07411daac7e5.gif)
+
+### Default keymap
+- `cmd-shift-J`: move active tab to the right
+- `cmd-shift-K`: move active tab to the left
