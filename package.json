@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "description": "Move your active tab with ease",
   "activationCommands": {
-    "atom-workspace": "swaptab-atom:toggle",
     "atom-workspace": "swaptab-atom:move-tab-right",
     "atom-workspace": "swaptab-atom:move-tab-left"
   },
