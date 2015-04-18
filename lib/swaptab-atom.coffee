@@ -13,7 +13,7 @@ module.exports = SwaptabAtom =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:toggle': => @toggle()
+    # @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:toggle': => @toggle()
     @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:move-tab-right': => @moveRight()
     @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:move-tab-left': => @moveLeft()
 
@@ -33,8 +33,8 @@ module.exports = SwaptabAtom =
   serialize: ->
     # swaptabAtomViewState: @swaptabAtomView.serialize()
 
-  toggle: ->
-    console.log 'SwaptabAtom was toggled!'
+  # toggle: ->
+  #   console.log 'SwaptabAtom was toggled!'
 
     # if @modalPanel.isVisible()
     #   @modalPanel.hide()
