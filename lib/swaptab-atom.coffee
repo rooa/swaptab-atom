@@ -7,13 +7,11 @@ module.exports = SwaptabAtom =
   subscriptions: null
 
   activate: (state) ->
-    @swaptabAtomView = new SwaptabAtomView(state.swaptabAtomViewState)
-    console.log "here1"
-    @modalPanel = atom.workspace.addModalPanel(item: @swaptabAtomView.getElement(), visible: false)
-    console.log "here2"
+    # @swaptabAtomView = new SwaptabAtomView(state.swaptabAtomViewState)
+    # @modalPanel = atom.workspace.addModalPanel(item: @swaptabAtomView.getElement(), visible: false)
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
-    console.log "here3"
+
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:toggle': => @toggle()
     @subscriptions.add atom.commands.add 'atom-workspace', 'swaptab-atom:move-tab-right': => @moveRight()
@@ -28,17 +26,17 @@ module.exports = SwaptabAtom =
     pane.moveItemLeft()
 
   deactivate: ->
-    @modalPanel.destroy()
+    # @modalPanel.destroy()
     @subscriptions.dispose()
-    @swaptabAtomView.destroy()
+    # @swaptabAtomView.destroy()
 
   serialize: ->
-    swaptabAtomViewState: @swaptabAtomView.serialize()
+    # swaptabAtomViewState: @swaptabAtomView.serialize()
 
   toggle: ->
     console.log 'SwaptabAtom was toggled!'
 
-    if @modalPanel.isVisible()
-      @modalPanel.hide()
-    else
-      @modalPanel.show()
+    # if @modalPanel.isVisible()
+    #   @modalPanel.hide()
+    # else
+    #   @modalPanel.show()
