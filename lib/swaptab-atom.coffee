@@ -21,15 +21,11 @@ module.exports = SwaptabAtom =
   moveRight: ->
     pane = atom.workspace.getActivePane()
     pane.moveItemRight()
-    console.log "Pane moved right"
 
   moveLeft: ->
     pane = atom.workspace.getActivePane()
     pane.moveItemLeft()
-    # item.moveItemLeft()
-    console.log "Pane moved left"
-
-
+        
   deactivate: ->
     @modalPanel.destroy()
     @subscriptions.dispose()
