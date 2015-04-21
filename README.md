@@ -1,4 +1,8 @@
-# swaptab-atom
+# NOTE
+After creating this package, I found that Atom already has an equivalent builtin command.
+Please refer to [here](https://github.com/atom/atom/blob/master/keymaps/darwin.cson#L31)..
+
+## swaptab-atom
 
 Move your tab with one command.
 
