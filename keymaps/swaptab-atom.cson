@@ -8,5 +8,5 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/behind-atom-keymaps-in-depth
 'atom-workspace':
-  'shift-cmd-K': 'swaptab-atom:move-tab-right'
-  'shift-cmd-J': 'swaptab-atom:move-tab-left'
+  'ctrl-shift-cmd-K': 'swaptab-atom:move-tab-right'
+  'ctrl-shift-cmd-J': 'swaptab-atom:move-tab-left'
