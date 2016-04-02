@@ -1,6 +1,6 @@
 # NOTE
 After creating this package, I found that Atom already has an equivalent builtin command.
-Please refer to [here](https://github.com/atom/atom/blob/master/keymaps/darwin.cson#L31)..
+Please refer to [here](https://github.com/atom/atom/blob/master/keymaps/darwin.cson#L32)..
 
 ## swaptab-atom
 
