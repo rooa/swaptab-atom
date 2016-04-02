@@ -1,10 +1,9 @@
 {
   "name": "swaptab-atom",
   "main": "./lib/swaptab-atom",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Move your active tab with ease",
   "activationCommands": {
-    "atom-workspace": "swaptab-atom:move-tab-right",
     "atom-workspace": "swaptab-atom:move-tab-left"
   },
   "repository": "https://github.com/rooa/swaptab-atom",
@@ -12,6 +11,5 @@
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
